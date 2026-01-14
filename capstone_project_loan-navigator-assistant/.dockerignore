@@ -1,0 +1,53 @@
+# Python cache (individual directories will be ignored, centralized .pycache will be created in container)
+__pycache__/
+.pycache/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# MLflow runs (will be mounted as volume)
+mlruns/
+
+# Environment files (sensitive - never in image)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation
+docs/
+*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

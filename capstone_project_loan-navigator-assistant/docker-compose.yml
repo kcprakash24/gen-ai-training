@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  loan-navigator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: loan-navigator
+    ports:
+      - "8000:8000"  # FastAPI
+      - "8501:8501"  # Streamlit
+    environment:
+      # Disable Key Vault for local Docker (use .env fallback)
+      - AZURE_KEY_VAULT_URL=
+    env_file:
+      - .env
+    restart: unless-stopped

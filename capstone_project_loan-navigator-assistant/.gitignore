@@ -1,0 +1,14 @@
+__pycache__
+.pycache
+.venv
+.env
+
+database/vector_store/
+
+dataset/Loan_Policy-2020-1.pdf
+
+# MLflow
+mlruns/
+mlartifacts/
+
+logs/
